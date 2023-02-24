@@ -1,0 +1,47 @@
+.table{
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  vertical-align: auto;
+ 
+}
+.ColorRed{
+  color: red;
+}
+.ColorGreen{
+  color: green;
+}
+.table h2{
+  margin: 10px 0px;
+  text-align: center;
+  /* font-size: 18px; */
+  font-weight: bold;
+  text-decoration: underline;
+}
+.table p{
+  padding: 20px 0px;
+}
+.table table{
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(224, 219, 219);
+  overflow: auto;
+  /* color: ; */
+}
+ tr td{
+  padding: 5px;
+}
+.tr{
+  margin: 10px 0px;
+  width: 100%;
+}
+ tr td svg{
+  cursor: pointer;
+  color: #333E48;
+}
+.table table TableHead{
+  background-color: #333E48;
+  color: white;
+}

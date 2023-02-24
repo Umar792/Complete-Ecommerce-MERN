@@ -1,0 +1,341 @@
+.haeder{
+    position: sticky;
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr;
+    gap: 20px;
+    padding: 15px 10px;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    border-bottom: 1px solid gray;
+    background-color: white;
+    
+}
+.haeder a{
+    color: #333E48;
+}
+.burger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.burger .burger-icon{
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+.burger .burger-icon:hover{
+    color: #eb4034;
+}
+.left-header{
+    border: 2px solid black solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.heading h2{
+    color: #333E48;
+    font-size: 33px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .2s linear;
+    font-family: 'Itim', cursive;
+    border: none;
+}
+.heading h2:hover{
+    color: #eb4034;
+}
+
+/* ============= right-header  */
+.right-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .r-icon{
+    font-size: 28px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.search{
+    display: none;
+}
+ .r-icon:hover{
+    color: #eb4034;
+
+}
+/* ======================== middle-header */
+.middle-header{
+    display:grid;
+    grid-template-columns: 1fr .070fr;
+    gap: 10px;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #333E48;
+    padding: 2px;
+}
+.middle-header input{
+    padding: 7px 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 20px 0px 0px 20px;
+}
+.middle-header .m-search{
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+.middle-header .m-search:hover{
+   color: #eb4034;
+}
+
+
+/* ==========================================bottom-header  */
+.bottom-header{
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: #333E48;
+    /* position: sticky;
+    top: 70px;
+    z-index: 90; */
+}
+.bottom-header a{
+    color: white;
+}
+.bottom-header li{
+    list-style: none;
+    margin: 0px 5px;
+    cursor: pointer;
+    color: white;
+}
+.bottom-header ul{
+    display: flex;
+    list-style: none;
+    margin-left: 15px;
+    
+}
+.bottom-header ul li{
+    margin: 0px 10px;
+    cursor: pointer;
+    padding: 5px 8px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.bottom-header ul li a:hover{
+    color: #eb4034;
+}
+/* ==================================================== */
+/* =========================== */
+
+.sidebar{
+    background-color: #151515 !important;
+    color: white;
+    width: 350px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    padding: 50px 10px;
+    transition: transform .2s linear;
+   z-index:99;
+   overflow: auto;
+   color: white;
+   
+    
+}
+.sidebar ul li{
+    cursor: pointer;
+}
+.sidebar ul li ul{
+    display: none;
+}
+ul li:hover > ul,
+ul li ul:hover {
+    display: block;
+}
+
+.mobile{
+    transform: translateX(-100%);
+    transition: all .2s linear;
+}
+.sidebar .sidebar-cross{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   margin-bottom: 25px;
+   padding: 0px 10px;
+}
+.sidebar .cross{
+    font-size: 23px;
+    cursor: pointer;
+   
+}
+.sidebar .cross:hover{
+    color: #BB7B1C;
+}
+.sidebar .sidebar-menus{
+    padding: 5px 8px;
+    margin: 10px 0px;
+    list-style: none;
+}
+.sidebar ul a{
+    color: rgb(212, 200, 200);
+    text-decoration: none;
+}
+.sidebar ul li:hover {
+    color: #BB7B1C;
+}
+.sidebar ul a li{
+    margin: 5px 0px;
+    padding: 15px 2px;
+    font-size: 18px;
+}
+.active{
+    color: #BB7B1C;
+  }
+
+
+
+
+
+/* ==================================================== media querry  */
+@media(max-width : 950px){
+    
+    .middle-header{
+        gap: 5px;
+    }
+}
+@media(max-width : 780px){
+    .haeder{
+        grid-template-columns : 1fr 1fr;
+    }
+    .middle-header{
+        position: absolute;
+        width: 100%; 
+        left: 0;
+        top: 65px;
+        border-radius: 0;
+        background-color: white;
+        border: 1px solid gray;
+        padding: 7px 50px;
+        z-index: 100;
+        transform: translateX(-100%);
+        transition: transform .1s linear;
+    }
+    .middle-header-right{
+        transform: translateX(0);
+
+    }
+    .search{
+        display: block;
+       
+
+    }
+    .middle-header .m-search{
+        color: black;
+    }
+}
+
+@media(max-width: 550px){
+    .haeder{
+        padding: 10px 5px;
+    }
+    .r-icon{
+        font-size: 23px;
+        margin: 0px 5px;
+    }
+    .heading h2{
+        font-size: 28px;
+    }
+    .middle-header{
+        top: 54px;
+        padding: 5px 10px;
+    }
+    .bottom-header{
+        top: 50px;
+    }
+}
+@media(max-width : 460px){
+    .bottom-header{
+        padding: 8px 10px;
+        justify-content: space-around;
+    }
+    .bottom-header li{
+        margin: 0px 5px;
+    }
+    .bottom-header ul{
+        margin-left: 10px;
+    }
+    .bottom-header ul li{
+        margin: 0px 5px;
+        padding: 5px 5px;
+        font-size: 15px;
+    }
+    .sidebar-menu{
+        width: 100%;
+    }
+
+}
+@media(max-width : 420px){
+    .middle-header{
+        padding: 5px 0px;
+    } 
+}
+@media(max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+  }
+
+@media(max-width:380px){
+    .bottom-header{
+        justify-content: space-between;
+        padding: 8px 5px;
+    }
+    .bottom-header ul{
+        margin-left: 0px;
+    }
+    .bottom-header li{
+        font-size: 13px;
+    }
+    .burger .burger-icon{
+        font-size: 18px;
+    }
+    .r-icon{
+        font-size: 20px;
+        margin: 0px 5px;
+    }
+    .heading h2{
+        font-size: 24px;
+    }
+    .middle-header{
+        top: 48px;
+        padding: 5px 10px;
+    } 
+}
+
+@media(max-width : 320px){
+    .bottom-header{
+        justify-content: space-between;
+        padding: 8px 2px;
+    }
+    .bottom-header li{
+        font-size: 10px;
+    }
+    .bottom-header ul li{
+        font-size: 14px;
+    }
+    .heading h2{
+        font-size: 18px;
+    }
+    .middle-header{
+        top: 40px;
+        padding: 5px 5px;
+    } 
+    .bottom-header{
+        top: 40px;
+    }
+}

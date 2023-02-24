@@ -1,0 +1,19 @@
+.userOption{
+    /* z-index: 99; */
+}
+.speedDial {
+    position: fixed;
+    right: 50px;
+    height: 350px;
+  }
+  
+  .speedDialIcon {
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+  }
+  @media(max-width : 400px){
+    .speedDial {
+      right: 15px;
+    }
+  }

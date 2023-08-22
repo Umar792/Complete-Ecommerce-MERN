@@ -76,7 +76,6 @@ const Header = () => {
           <NavLink to="/login">
             <MdOutlinePermContactCalendar className="r-icon" />
           </NavLink>
-          <AiOutlineHeart className="r-icon" />
           <NavLink to="/card">
             <AiOutlineShopping className="r-icon" />
           </NavLink>
@@ -98,12 +97,6 @@ const Header = () => {
           </li>
           <li>
             <NavLink to="/women">Women</NavLink>
-          </li>
-          <li>
-            <NavLink to="/boy">Boy</NavLink>
-          </li>
-          <li>
-            <NavLink to="/girl">Girl</NavLink>
           </li>
         </ul>
       </div>

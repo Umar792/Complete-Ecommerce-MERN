@@ -3,15 +3,18 @@ import reducer from "../Reducer/CardReducer";
 
 const getLocalStiragedata = () => {
   let localData = localStorage.getItem("cardItem");
-  if (localData === []) {
+  if (!localData || localData === "[]") {
+    // Check for null or empty array
     return [];
   } else {
     return JSON.parse(localData);
   }
 };
+
 const getShippingdata = () => {
   let shippingdata = localStorage.getItem("shipping");
-  if (shippingdata === {}) {
+  if (!shippingdata || shippingdata === "{}") {
+    // Check for null or empty object
     return {};
   } else {
     return JSON.parse(shippingdata);

@@ -9,36 +9,49 @@ import TransferWithinAStationIcon from "@material-ui/icons/TransferWithinAStatio
 import { Country, State } from "country-state-city";
 import CheckoutSteps from "./CheckoutSteps";
 import { UseCardContext } from "../../ContextApi/ProductContext/CardContext";
-import {toast} from "react-toastify"
+import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-import DriveFileRenameOutlineIcon from '@mui/icons-material/DriveFileRenameOutline';
+import DriveFileRenameOutlineIcon from "@mui/icons-material/DriveFileRenameOutline";
 
 const Shipping = () => {
-    const {shippinginfo,ShppingInfocall} = UseCardContext();
-    const navigate = useNavigate()
-    const [adress, setAddress] = useState(shippinginfo.adress ? shippinginfo.adress :"");
-    const [city, setCity] = useState(shippinginfo.city ? shippinginfo.city :"");
-    const [state, setState] = useState(shippinginfo.state ? shippinginfo.state :"");
-    const [country, setCountry] = useState(shippinginfo.country ? shippinginfo.country :"");
-    const [pinCode, setPinCode] = useState(shippinginfo.pinCode ? shippinginfo.pinCode :"");
-    const [phoneNo, setPhoneNo] = useState(shippinginfo.phoneNo ? shippinginfo.phoneNo :"");
-    const [name, setName] = useState(shippinginfo.name ? shippinginfo.name :"");
+  const { shippinginfo, ShppingInfocall } = UseCardContext();
+  const navigate = useNavigate();
+  const [adress, setAddress] = useState(
+    shippinginfo && shippinginfo.adress ? shippinginfo.adress : ""
+  );
+  const [city, setCity] = useState(
+    shippinginfo && shippinginfo.city ? shippinginfo.city : ""
+  );
+  const [state, setState] = useState(
+    shippinginfo && shippinginfo.state ? shippinginfo.state : ""
+  );
+  const [country, setCountry] = useState(
+    shippinginfo && shippinginfo.country ? shippinginfo.country : ""
+  );
+  const [pinCode, setPinCode] = useState(
+    shippinginfo && shippinginfo.pinCode ? shippinginfo.pinCode : ""
+  );
+  const [phoneNo, setPhoneNo] = useState(
+    shippinginfo && shippinginfo.phoneNo ? shippinginfo.phoneNo : ""
+  );
+  const [name, setName] = useState(
+    shippinginfo && shippinginfo.name ? shippinginfo.name : ""
+  );
 
-    const shippingInfoSubmit = (e)=>{
-        e.preventDefault();
+  const shippingInfoSubmit = (e) => {
+    e.preventDefault();
 
-        if(phoneNo.length < 10 || phoneNo.length > 10){
-          return toast.error("Phone number should be 10 digits")
-        }
-
-        ShppingInfocall({adress,city,state,country,pinCode,phoneNo,name});
-        toast.success("Shipping info  send successfuly")
-        navigate("/login/shipping/conform/shipping")
-
+    if (phoneNo.length < 10 || phoneNo.length > 10) {
+      return toast.error("Phone number should be 10 digits");
     }
+
+    ShppingInfocall({ adress, city, state, country, pinCode, phoneNo, name });
+    toast.success("Shipping info  send successfuly");
+    navigate("/login/shipping/conform/shipping");
+  };
   return (
     <Fragment>
-     <CheckoutSteps activeStep={0}/>
+      <CheckoutSteps activeStep={0} />
       <div className="shippingContainer">
         <div className="shippingBox">
           <h2 className="shippingHeading">Shipping Details</h2>

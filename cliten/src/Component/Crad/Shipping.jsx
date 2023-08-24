@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import "./Shipping.css";
 import PinDropIcon from "@material-ui/icons/PinDrop";
 import HomeIcon from "@material-ui/icons/Home";
@@ -14,7 +14,8 @@ import { useNavigate } from "react-router-dom";
 import DriveFileRenameOutlineIcon from "@mui/icons-material/DriveFileRenameOutline";
 
 const Shipping = () => {
-  const { shippinginfo, ShppingInfocall } = UseCardContext();
+  const { shippinginfo, ShppingInfocall, isAuthanticated } = UseCardContext();
+  console.log(isAuthanticated);
   const navigate = useNavigate();
   const [adress, setAddress] = useState(
     shippinginfo && shippinginfo.adress ? shippinginfo.adress : ""
@@ -49,6 +50,13 @@ const Shipping = () => {
     toast.success("Shipping info  send successfuly");
     navigate("/login/shipping/conform/shipping");
   };
+
+  useEffect(() => {
+    if (isAuthanticated === false) {
+      navigate("/login");
+    }
+  }, []);
+
   return (
     <Fragment>
       <CheckoutSteps activeStep={0} />

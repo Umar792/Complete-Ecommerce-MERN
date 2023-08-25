@@ -12,13 +12,13 @@ const Hero = () => {
         />
       </div>
       {/* ========== */}
-      <Carousel className="h-[300px] border-2 w-[100%] m-auto">
+      <Carousel className="carousal h-[300px] border-2 w-[100%] m-auto">
         <Carousel.Item>
           <img
             className="d-block w-100"
             src="https://couponspot.de/siteresources/images/TopSlider/1691171030073094300.PNG"
             alt="First slide"
-            style={{ height: "300px" }}
+            style={{ height: "100%" }}
           />
           <Carousel.Caption>
             <button className="slider-btn">SHOP NOW</button>
@@ -29,7 +29,7 @@ const Hero = () => {
             className="d-block w-100 "
             src="https://couponspot.de/siteresources/images/TopSlider/1627338390024007600.jpg"
             alt="Second slide"
-            style={{ height: "300px" }}
+            style={{ height: "100%" }}
           />
 
           <Carousel.Caption>
@@ -41,7 +41,7 @@ const Hero = () => {
             className="d-block w-100"
             src="https://couponspot.de/siteresources/images/TopSlider/1687197282060892000.jpg"
             alt="Third slide"
-            style={{ height: "300px" }}
+            style={{ height: "100%" }}
           />
 
           <Carousel.Caption>
@@ -50,7 +50,12 @@ const Hero = () => {
         </Carousel.Item>
       </Carousel>
       {/* ========= */}
-      <div className="right_hero_slide"></div>
+      <div className="right_hero_slide">
+        <img
+          src="https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt=""
+        />
+      </div>
     </div>
   );
 };

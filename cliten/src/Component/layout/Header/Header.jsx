@@ -5,6 +5,8 @@ import {
   AiOutlineSearch,
   AiOutlineShopping,
   AiOutlineHeart,
+  AiOutlineLaptop,
+  AiOutlineCamera,
 } from "react-icons/ai";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
@@ -12,6 +14,14 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { NavLink, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import Backdrop from "@mui/material/Backdrop";
+import { IoWomanOutline } from "react-icons/io5";
+import { FaTshirt } from "react-icons/fa";
+import { BsFillPhoneFill, BsHandbag, BsTools } from "react-icons/bs";
+import { GiJewelCrown } from "react-icons/gi";
+import { BiBed, BiFootball } from "react-icons/bi";
+import { MdOutlineToys } from "react-icons/md";
+import { GiHealthPotion } from "react-icons/gi";
+import { FcAutomotive } from "react-icons/fc";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -27,6 +37,13 @@ const Header = () => {
     } else {
       toast.error("No product were found");
       navigate("/");
+    }
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      // Check if the pressed key is Enter
+      datasubmit(e);
     }
   };
   return (
@@ -53,6 +70,7 @@ const Header = () => {
             placeholder="Search"
             onChange={(e) => setkeyword(e.target.value)}
             value={keyword}
+            onKeyDown={handleKeyDown}
           />
           <AiOutlineSearch
             className="m-search"
@@ -89,7 +107,7 @@ const Header = () => {
             className="burger-icon"
             onClick={() => setTogglemenu(!togglemenu)}
           />
-          <li>All</li>
+          <li>Categories</li>
         </div>
         <ul>
           <li>
@@ -117,7 +135,7 @@ const Header = () => {
         </div>
         <div>
           <ul className="sidebar-menus">
-            <li>
+            {/* <li>
               Men
               <IoMdArrowDropdown />
               <ul>
@@ -205,7 +223,7 @@ const Header = () => {
                   </NavLink>
                 </div>
               </ul>
-            </li>
+            </li> */}
             {/* <hr />
             <li>
               Boy
@@ -297,6 +315,86 @@ const Header = () => {
               </ul>
             </li>
             <hr /> */}
+            {/* ==========================================  */}
+            {/* ============================================================================================ */}
+            <NavLink to="/category/Women's Fashion">
+              <div className="innerli">
+                <IoWomanOutline />
+                <li>Women's Fashion</li>
+              </div>
+            </NavLink>
+            <NavLink to="/category/Men's Fashion">
+              <div className="innerli">
+                <FaTshirt />
+                <li>Men's Fashion</li>
+              </div>
+            </NavLink>
+            <NavLink to="/category/Phones & Telecommunications">
+              <div className="innerli">
+                <BsFillPhoneFill />
+                <li>Phones & Telecommunications</li>
+              </div>
+            </NavLink>
+            <NavLink to="/category/Computer, Office & Security">
+              <div className="innerli">
+                <AiOutlineLaptop />
+                <li>Computer, Office & Security</li>
+              </div>
+            </NavLink>
+            <NavLink to="/category/Consumer Electronics">
+              <div className="innerli">
+                <AiOutlineCamera />
+                <li>Consumer Electronics</li>
+              </div>
+            </NavLink>
+            <NavLink to="/category/Jewelry & Watches">
+              <div className="innerli">
+                <GiJewelCrown />
+                <li>Jewelry & Watches</li>
+              </div>
+            </NavLink>
+            <NavLink to="/category/Home, Pet & Appliances">
+              <div className="innerli">
+                <BiBed />
+                <li>Home, Pet & Appliances</li>
+              </div>
+            </NavLink>
+            <NavLink to="/category/Bags & Shoes">
+              <div className="innerli">
+                <BsHandbag />
+                <li>Bags & Shoes</li>
+              </div>
+            </NavLink>
+            <NavLink to="/category/Toys , Kids & Babies">
+              <div className="innerli">
+                <MdOutlineToys />
+                <li>Toys , Kids & Babies</li>
+              </div>
+            </NavLink>
+            <NavLink to="/category/Outdoor Fun & Sports">
+              <div className="innerli">
+                <BiFootball />
+                <li>Outdoor Fun & Sports</li>
+              </div>
+            </NavLink>
+            <NavLink to="/category/Beauty, Health & Hair">
+              <div className="innerli">
+                <GiHealthPotion />
+                <li>Beauty, Health & Hair</li>
+              </div>
+            </NavLink>
+            <NavLink to="/category/Automobiles & Motorcycles">
+              <div className="innerli">
+                <FcAutomotive />
+                <li>Automobiles & Motorcycles</li>
+              </div>
+            </NavLink>
+            <NavLink to="/category/Tools & Home Improvement">
+              <div className="innerli">
+                <BsTools />
+                <li>Tools & Home Improvement</li>
+              </div>
+            </NavLink>
           </ul>
         </div>
       </div>

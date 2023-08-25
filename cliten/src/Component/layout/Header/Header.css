@@ -1,7 +1,7 @@
 .haeder {
   position: sticky;
   display: grid;
-  grid-template-columns: 0.3fr 1fr 0.2fr;
+  grid-template-columns: 0.4fr 1fr 0.3fr;
   gap: 20px;
   padding: 15px 10px;
   top: 0;
@@ -13,6 +13,7 @@
 .haeder a {
   color: #333e48;
 }
+
 .burger {
   display: flex;
   justify-content: center;
@@ -34,7 +35,8 @@
   align-items: center;
 }
 .heading h2 {
-  color: #333e48;
+  /* color: #333e48; */
+  color: #ff4747;
   font-size: 33px;
   font-weight: bold;
   cursor: pointer;
@@ -66,11 +68,12 @@
 /* ======================== middle-header */
 .middle-header {
   display: grid;
-  grid-template-columns: 1fr 0.07fr;
+  grid-template-columns: 1fr 0.05fr;
   gap: 10px;
   align-items: center;
-  border-radius: 20px;
-  background-color: #333e48;
+  border-radius: 7px;
+  /* background-color: #333e48; */
+  background-color: #ff4747;
   padding: 2px;
 }
 .middle-header input {
@@ -78,7 +81,7 @@
   border: none;
   outline: none;
   font-size: 18px;
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 7px 0px 0px 7px;
 }
 .middle-header .m-search {
   font-size: 25px;
@@ -86,18 +89,18 @@
   color: white;
 }
 .middle-header .m-search:hover {
-  color: #eb4034;
+  color: #151515;
 }
 
 /* ==========================================bottom-header  */
 .bottom-header {
   display: flex;
   align-items: center;
-  padding: 8px 15px;
   background-color: #333e48;
   /* position: sticky;
     top: 70px;
     z-index: 90; */
+  padding: 8px 100px;
 }
 .bottom-header a {
   color: white;
@@ -122,6 +125,9 @@
 }
 .bottom-header ul li a:hover {
   color: #eb4034;
+}
+.active {
+  color: #ff4747;
 }
 /* ==================================================== */
 /* =========================== */
@@ -167,7 +173,8 @@ ul li ul:hover {
   cursor: pointer;
 }
 .sidebar .cross:hover {
-  color: #bb7b1c;
+  /* color: #bb7b1c; */
+  color: #ff4747;
 }
 .sidebar .sidebar-menus {
   padding: 5px 8px;
@@ -179,7 +186,8 @@ ul li ul:hover {
   text-decoration: none;
 }
 .sidebar ul li:hover {
-  color: #bb7b1c;
+  /* color: #bb7b1c; */
+  color: #ff4747;
 }
 .sidebar ul a li {
   margin: 5px 0px;
@@ -187,7 +195,16 @@ ul li ul:hover {
   font-size: 18px;
 }
 .active {
-  color: #bb7b1c;
+  color: #ff4747;
+}
+.innerli {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.innerli svg {
+  font-size: 20px;
+  margin-right: 5px;
 }
 
 /* ==================================================== media querry  */
@@ -221,6 +238,12 @@ ul li ul:hover {
   }
   .middle-header .m-search {
     color: black;
+  }
+  .bottom-header {
+    padding: 10px;
+  }
+  .haeder {
+    padding: 10px;
   }
 }
 

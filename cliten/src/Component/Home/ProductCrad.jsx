@@ -1,29 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ReactStars from "react-rating-stars-component";
 
 const ProductCrad = ({ product }) => {
-  const options = {
-    edit: false,
-    color: "rgba(20,20,20,.1)",
-    activeColor: "tomato",
-    size: window.innerWidth < 600 ? 20 : 25,
-    value: product.rattings,
-    isHalf: true,
-  };
-
+  console.log(product);
   return (
     <Link className="productCard" to={`/singleProduct/${product._id}`}>
       <img
         src={product && product.images && product.images[0].url}
-        alt={product.name}
+        alt={product && product.name}
       />
-      <p>{product.name}</p>
-      <div>
-        <ReactStars {...options} />
-        <span className="productCardSpan">({product.numOfReviews}Reviews)</span>
+      <div className="pricing flex justify-between place-items-end">
+        <span>{`$${product.price}`}</span>
+        <p className="disount">${product && product.Discountprice}</p>
       </div>
-      <span>{`PKR${product.price}`}</span>
+      <font className="text-[green]">100% Free Sgipping</font>
+      {/* <p>{product && product.name && product.name.slice(0, 30)}...</p> */}
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </Link>
   );
 };

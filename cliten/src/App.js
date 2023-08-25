@@ -52,6 +52,7 @@ import Loading from "./Component/layout/Loading/Loading";
 import AllUser from "./Component/Admin/AllUser";
 import UpdateUserRole from "./Component/Admin/UpdateUserRole";
 import NotFound from "./Component/layout/NotFound/NotFound";
+// import Header from "./AliExpressCompoenets/Layout/Header";
 
 function App() {
   const { getAllproducts, loading } = useProductContext();
@@ -84,6 +85,7 @@ function App() {
       <ToastContainer position="top-right" theme="dark" />
       <ScrollToTop />
       <Header />
+      {/* <Header /> */}
       {isAuthanticated && <UserOptionHeader user={user} />}
       <Routes>
         <Route path="/" exact element={<Home />} />

@@ -10,7 +10,6 @@ import {
 } from "react-icons/ai";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
-import { IoMdArrowDropdown } from "react-icons/io";
 import { NavLink, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import Backdrop from "@mui/material/Backdrop";

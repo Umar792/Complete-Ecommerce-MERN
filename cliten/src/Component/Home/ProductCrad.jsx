@@ -20,9 +20,9 @@ const ProductCrad = ({ product }) => {
       </div>
       <p>{product && product.name && product.name.slice(0, 30)}...</p>
       <font className="text-[green]">100% Free Sgipping</font>
-      <Link to="/">
+      <a href={product && product.link && product.link}>
         <button>Shop Now</button>
-      </Link>
+      </a>
     </Link>
   );
 };

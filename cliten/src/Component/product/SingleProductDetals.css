@@ -9,6 +9,42 @@
   /* .ProductDetails:first-child{
     max-width: 400px;
   } */
+
+  /* ====================== */
+  /* ====================================== */
+  /* ============================================================ */
+  /* ============================================================================= */
+  .pricing_sin p{
+    position: relative;
+    width: 45px;
+    margin-right: 5px;
+  }
+
+
+
+
+
+
+  .pricing_sin .off::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 100%;
+    height: 3px ;
+    background-color: #FF4747;
+    z-index: 1;
+    font-weight: bold;
+  }
+
+.more img{
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  margin: 10px 0px;
+}
+
+  /* =============== */
   
   .ProductDetails > div {
     width: 100%;

@@ -81,34 +81,34 @@
   padding-bottom: 0.5vmax;
   background-color: white;
   border-radius: 10px;
-  height: 350px;
+  height: 360px;
   border: 1px solid rgb(212, 210, 210);
   overflow: hidden !important;
   position: relative;
 }
-.productCard p{
+.productCard p {
   padding: 2px;
 }
-.productCard:hover p{
+.productCard:hover p {
   color: black;
 }
-.productCard font{
+.productCard font {
   padding: 2px;
 }
-.productCard .off{
+.productCard .off {
   position: absolute;
   right: 0;
   top: 0;
   border-radius: 0px 10px 0px 0px;
   z-index: 10;
-  background-color: #FF4747;
+  background-color: #ff4747;
   color: white;
   padding: 5px;
   font-size: 13px;
 }
-.productCard button{
+.productCard button {
   width: 100%;
-  background-color: #FF4747;
+  background-color: #ff4747;
   color: white;
   font-size: 16px;
   position: absolute;
@@ -120,14 +120,14 @@
 .productCard > img {
   /* width: 300px;
   height: 450px; */
-  height: 200px;
-  /* object-fit: cover; */
+  height: 190px;
+  /* object-fit: contain; */
   width: 100%;
   border-radius: 10px 10px 0px 0px;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
-.productCard:hover  img{
+.productCard:hover img {
   transform: scale(1.05);
 }
 

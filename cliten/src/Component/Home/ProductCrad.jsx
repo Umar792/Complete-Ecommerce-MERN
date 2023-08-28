@@ -1,9 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const ProductCrad = ({ product }) => {
   return (
     <Link className="productCard" to={`/singleProduct/${product._id}`}>
+      {/* <NavLink to={`/singleProduct/${product._id}`}> */}
       {product && product.percentageDiscount && (
         <span className="off">{`-${
           product && product.percentageDiscount
@@ -19,8 +20,9 @@ const ProductCrad = ({ product }) => {
         <p className="disount">${product && product.Discountprice}</p>
       </div>
       <p>{product && product.name && product.name.slice(0, 30)}...</p>
+      {/* </NavLink> */}
       <font className="text-[green]">100% Free Sgipping</font>
-      <a href={product && product.link && product.link}>
+      <a href={product && product.link && product.link} target="_blank">
         <button>Shop Now</button>
       </a>
     </Link>

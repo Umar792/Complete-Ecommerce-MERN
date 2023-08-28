@@ -52,6 +52,7 @@ import Loading from "./Component/layout/Loading/Loading";
 import AllUser from "./Component/Admin/AllUser";
 import UpdateUserRole from "./Component/Admin/UpdateUserRole";
 import NotFound from "./Component/layout/NotFound/NotFound";
+import CategoryPage from "./Component/product/CategoryPage";
 // import Header from "./AliExpressCompoenets/Layout/Header";
 
 function App() {
@@ -91,6 +92,8 @@ function App() {
         <Route path="/" exact element={<Home />} />
         <Route path="/serach" exact element={<AllProducts />} />
         <Route path="/serach/:keyword" element={<AllProducts />} />
+        <Route path="/category/:name" element={<CategoryPage />} />
+
         {/* ==============men  */}
         <Route path="/men" exact element={<MenAllproduct />} />
         <Route path="/boski" exact element={<Boski />} />

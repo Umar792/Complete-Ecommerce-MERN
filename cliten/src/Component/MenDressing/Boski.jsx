@@ -1,15 +1,14 @@
-import React from 'react'
-import AllproductCall from '../../AllproductApical/AllproductCall'
-import { useProductContext } from '../../ContextApi/ProductContext/ProductContext'
+import React from "react";
+import AllproductCall from "../../AllproductApical/AllproductCall";
+import { useProductContext } from "../../ContextApi/ProductContext/ProductContext";
 
 const Boski = () => {
-  const {boski} = useProductContext();
-  console.log(boski);
+  const { boski } = useProductContext();
   return (
     <div>
-      <AllproductCall ProductsData={boski}/>
+      <AllproductCall ProductsData={boski} />
     </div>
-  )
-}
+  );
+};
 
-export default Boski
+export default Boski;

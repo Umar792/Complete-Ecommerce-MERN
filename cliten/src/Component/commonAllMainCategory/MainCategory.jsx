@@ -14,21 +14,23 @@ const MainCategory = ({ products, title }) => {
             <Loading />
           ) : (
             <Fragment>
-              <h2 className="productsHeading">{title}</h2>
-              <p className="text-center">Toatal Products : {products.length}</p>
+              {/* <h2 className="productsHeading">{title}</h2> */}
+              <p className="my-4 border-b-2 pb-2 w-[300px] mx-auto text-center">
+                Toatal Products : {products && products.length}
+              </p>
               <div className="products">
                 {products &&
                   products.map((product) => (
                     <ProductCard key={product._id} product={product} />
                   ))}
               </div>
-
-             
             </Fragment>
           )}
         </Fragment>
       ) : (
-        <h2 className="text-center my-5 p-3">No Product available</h2>
+        <h2 className="text-center bg-[gray] my-5 p-4 text-white text-2xl w-[320px] mx-auto">
+          No Product available
+        </h2>
       )}
     </>
   );

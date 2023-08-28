@@ -317,79 +317,79 @@ const Header = () => {
             {/* ==========================================  */}
             {/* ============================================================================================ */}
             <NavLink to="/category/Women's Fashion">
-              <div className="innerli">
+              <div className="innerli" onClick={() => setTogglemenu(false)}>
                 <IoWomanOutline />
                 <li>Women's Fashion</li>
               </div>
             </NavLink>
             <NavLink to="/category/Men's Fashion">
-              <div className="innerli">
+              <div className="innerli" onClick={() => setTogglemenu(false)}>
                 <FaTshirt />
                 <li>Men's Fashion</li>
               </div>
             </NavLink>
             <NavLink to="/category/Phones & Telecommunications">
-              <div className="innerli">
+              <div className="innerli" onClick={() => setTogglemenu(false)}>
                 <BsFillPhoneFill />
                 <li>Phones & Telecommunications</li>
               </div>
             </NavLink>
             <NavLink to="/category/Computer, Office & Security">
-              <div className="innerli">
+              <div className="innerli" onClick={() => setTogglemenu(false)}>
                 <AiOutlineLaptop />
                 <li>Computer, Office & Security</li>
               </div>
             </NavLink>
             <NavLink to="/category/Consumer Electronics">
-              <div className="innerli">
+              <div className="innerli" onClick={() => setTogglemenu(false)}>
                 <AiOutlineCamera />
                 <li>Consumer Electronics</li>
               </div>
             </NavLink>
             <NavLink to="/category/Jewelry & Watches">
-              <div className="innerli">
+              <div className="innerli" onClick={() => setTogglemenu(false)}>
                 <GiJewelCrown />
                 <li>Jewelry & Watches</li>
               </div>
             </NavLink>
             <NavLink to="/category/Home, Pet & Appliances">
-              <div className="innerli">
+              <div className="innerli" onClick={() => setTogglemenu(false)}>
                 <BiBed />
                 <li>Home, Pet & Appliances</li>
               </div>
             </NavLink>
             <NavLink to="/category/Bags & Shoes">
-              <div className="innerli">
+              <div className="innerli" onClick={() => setTogglemenu(false)}>
                 <BsHandbag />
                 <li>Bags & Shoes</li>
               </div>
             </NavLink>
             <NavLink to="/category/Toys , Kids & Babies">
-              <div className="innerli">
+              <div className="innerli" onClick={() => setTogglemenu(false)}>
                 <MdOutlineToys />
                 <li>Toys , Kids & Babies</li>
               </div>
             </NavLink>
             <NavLink to="/category/Outdoor Fun & Sports">
-              <div className="innerli">
+              <div className="innerli" onClick={() => setTogglemenu(false)}>
                 <BiFootball />
                 <li>Outdoor Fun & Sports</li>
               </div>
             </NavLink>
             <NavLink to="/category/Beauty, Health & Hair">
-              <div className="innerli">
+              <div className="innerli" onClick={() => setTogglemenu(false)}>
                 <GiHealthPotion />
                 <li>Beauty, Health & Hair</li>
               </div>
             </NavLink>
             <NavLink to="/category/Automobiles & Motorcycles">
-              <div className="innerli">
+              <div className="innerli" onClick={() => setTogglemenu(false)}>
                 <FcAutomotive />
                 <li>Automobiles & Motorcycles</li>
               </div>
             </NavLink>
             <NavLink to="/category/Tools & Home Improvement">
-              <div className="innerli">
+              <div className="innerli" onClick={() => setTogglemenu(false)}>
                 <BsTools />
                 <li>Tools & Home Improvement</li>
               </div>

@@ -29,12 +29,19 @@ const CreateProduct = () => {
   const [percentageDiscount, setpercentageDiscount] = useState(0);
 
   const categories = [
-    "boski",
-    "kurta",
-    "wash&wear",
-    "menShawl",
-    "cotton",
-    "karandi",
+    "Women's Fashion",
+    "Men's Fashion",
+    "Phones & Telecommunications",
+    "Computer, Office & Security",
+    "Consumer Electronics",
+    "Jewelry & Watches",
+    "Home, Pet & Appliances",
+    "Bags & Shoes",
+    "Toys , Kids & Babies",
+    "Outdoor Fun & Sports",
+    "Beauty, Health & Hair",
+    "Automobiles & Motorcycles",
+    "Tools & Home Improvement",
   ];
   const mainAllcategories = ["men", "boy", "women", "girl"];
 

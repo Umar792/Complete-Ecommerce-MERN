@@ -106,15 +106,15 @@ const Header = () => {
             className="burger-icon"
             onClick={() => setTogglemenu(!togglemenu)}
           />
-          <li>Categories</li>
+          <li onClick={() => setTogglemenu(!togglemenu)}>All Categories</li>
         </div>
         <ul>
-          <li>
+          {/* <li>
             <NavLink to="/men">Men</NavLink>
           </li>
           <li>
             <NavLink to="/women">Women</NavLink>
-          </li>
+          </li> */}
         </ul>
       </div>
       {/* =================================== siderbar header  */}

@@ -5,7 +5,7 @@ import Loading from "../layout/Loading/Loading";
 import Hero from "./Hero";
 import HomeCategorySection from "./HomeCategorySection";
 import { useProductContext } from "../../ContextApi/ProductContext/ProductContext";
-import MonthlyOffer from "./MonthlyOffer.jsx";
+import Collections from "./Collections";
 
 const Home = () => {
   const { featured: products, loading } = useProductContext();
@@ -20,6 +20,7 @@ const Home = () => {
       ) : (
         <>
           <Hero />
+          <Collections />
           <HomeCategorySection data={products} />
           {/* <MonthlyOffer /> */}
           <h2 className="homeHeading">Featured Products</h2>

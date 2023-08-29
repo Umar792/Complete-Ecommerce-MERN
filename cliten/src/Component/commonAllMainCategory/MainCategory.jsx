@@ -6,9 +6,10 @@ import ProductCard from "../Home/ProductCrad";
 
 const MainCategory = ({ products, title }) => {
   const { loading } = useProductContext();
+  const revercepro = products && products.reverse();
   return (
     <>
-      {products.length > 0 ? (
+      {revercepro.length > 0 ? (
         <Fragment>
           {loading ? (
             <Loading />
@@ -16,11 +17,11 @@ const MainCategory = ({ products, title }) => {
             <Fragment>
               {/* <h2 className="productsHeading">{title}</h2> */}
               <p className="my-4 border-b-2 pb-2 w-[300px] mx-auto text-center">
-                Toatal Products : {products && products.length}
+                Toatal Products : {revercepro && revercepro.length}
               </p>
               <div className="products">
-                {products &&
-                  products.map((product) => (
+                {revercepro &&
+                  revercepro.map((product) => (
                     <ProductCard key={product._id} product={product} />
                   ))}
               </div>

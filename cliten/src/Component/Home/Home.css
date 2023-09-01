@@ -69,6 +69,7 @@
   flex-wrap: wrap;
   justify-content: center;
   max-width: 100%;
+  gap: 20px;
 }
 
 .productCard {
@@ -176,6 +177,22 @@
 .productCard:hover {
   box-shadow: 0px 0px 10px 1px rgb(0, 0, 0, 0.3);
 }
+
+
+/* ========================= new_product_card */
+.new_product_card{
+  overflow: hidden;
+}
+
+.new_product_card:hover{
+  box-shadow: 2px 2px 10px 5px rgb(0, 0, 0, 0.3);
+}
+
+.new_product_card:hover img{
+  transition: all .2s linear;
+  transform: scale(1.05);
+}
+
 
 /* @media screen and (max-width: 600px) {
   .productCard > p {

@@ -7,7 +7,7 @@ const Hero = () => {
     <div className="hero">
       <div className="left_hero_slide">
         <img
-          src="https://images.pexels.com/photos/974911/pexels-photo-974911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          src="https://s.alicdn.com/@sc04/kf/H235848edc42a4d26ac88fa0becde6025s.jpg_720x720q50.jpg"
           alt=""
         />
       </div>
@@ -16,7 +16,7 @@ const Hero = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://couponspot.de/siteresources/images/TopSlider/1691171030073094300.PNG"
+            src="https://ae01.alicdn.com/kf/H99948d81ab0f496292325b1f6046f11fJ.jpg_Q90.jpg_.webp"
             alt="First slide"
             style={{ height: "100%" }}
           />
@@ -27,7 +27,7 @@ const Hero = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 "
-            src="https://couponspot.de/siteresources/images/TopSlider/1627338390024007600.jpg"
+            src="https://m.media-amazon.com/images/I/610MEKlP11L._SX3000_.jpg"
             alt="Second slide"
             style={{ height: "100%" }}
           />
@@ -52,7 +52,7 @@ const Hero = () => {
       {/* ========= */}
       <div className="right_hero_slide">
         <img
-          src="https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=600"
+          src="https://s.alicdn.com/@img/imgextra/i2/O1CN01jIKbru1OnXz7TYprK_!!6000000001750-0-tps-460-698.jpg_720x720.jpg"
           alt=""
         />
       </div>

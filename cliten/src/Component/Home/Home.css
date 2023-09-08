@@ -151,7 +151,8 @@
   text-align: start;
   margin-bottom: 0;
 }
-
+.pricing{
+}
 .pricing span {
   color: tomato;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -162,7 +163,7 @@
   font-size: 16px;
   color: gray;
   position: relative;
-  width: 50px;
+  width: 70px;
 }
 .disount::before {
   content: "";

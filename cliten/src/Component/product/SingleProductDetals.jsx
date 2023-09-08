@@ -287,7 +287,7 @@ const SingleProductDetals = () => {
                     ...
                     <a href="#more">
                       <span className="text-[#FF4747] cursor-pointer">
-                        read more
+                        Read More
                       </span>
                     </a>
                   </p>
@@ -314,8 +314,8 @@ const SingleProductDetals = () => {
           </section>
           {/* =============================== */}
           <div className="my-5 px-3" id="more">
-            <p className="text-4xl font-bold text-[#FF4747] mb-3">
-              More about product
+            <p className="text-3xl font-bold text-[#FF4747] mb-3">
+              More About Product
             </p>
             <div
               dangerouslySetInnerHTML={{

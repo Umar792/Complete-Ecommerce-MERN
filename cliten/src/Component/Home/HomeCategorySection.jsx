@@ -7,7 +7,7 @@ const HomeCategorySection = ({ data }) => {
   const sortedWelcomeProduct =
     data &&
     data.filter(
-      (item) => item.percentageDiscount && item.percentageDiscount >= 30
+      (item) => item.percentageDiscount && item.percentageDiscount >= 50
     );
   const sliceWelcomeProduct = sortedWelcomeProduct.slice(0, 24);
 

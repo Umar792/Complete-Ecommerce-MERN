@@ -43,8 +43,8 @@ const ProductCrad = ({ product }) => {
               className="flex place-items-center"
               to={`/singleProduct/${product._id}`}
             >
-              <span>{`$${product.price}`}</span>
-              <p className="disount">${product && product.Discountprice}</p>
+              <span>{`PKR${product.price}`}</span>
+              <p className="disount">PKR{product && product.Discountprice}</p>
             </Link>
           </div>
           <Link

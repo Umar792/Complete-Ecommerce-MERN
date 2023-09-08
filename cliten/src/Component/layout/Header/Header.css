@@ -29,7 +29,6 @@
   color: #eb4034;
 }
 .left-header {
-  border: 2px solid black solid black;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -42,7 +41,7 @@
   cursor: pointer;
   transition: all 0.2s linear;
   font-family: "Itim", cursive;
-  border: none;
+  border: none !important;
 }
 .heading h2:hover {
   color: #eb4034;

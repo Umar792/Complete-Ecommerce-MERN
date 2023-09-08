@@ -295,9 +295,11 @@ const SingleProductDetals = () => {
                   <div class="flex flex-col mt-3">
                     <div className="pricing_sin flex gap-2 place-items-end">
                       <span class="title-font font-medium text-3xl text-gray-900">
-                        ${product && product.price}
+                        Pkr{product && product.price}
                       </span>
-                      <p className="off">${product && product.Discountprice}</p>
+                      <p className="off">
+                        pkr{product && product.Discountprice}
+                      </p>
                     </div>
                     <a
                       href={product && product.link && product.link}

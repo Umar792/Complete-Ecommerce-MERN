@@ -21,7 +21,7 @@ const Footer = () => {
         <p>2: Garh More Jhung,35200 Pakistan</p>
         <p>
           <AiFillMail />
-          <spna>clickordernow@gmail.com</spna>
+          <spna>clickordern@gmail.com</spna>
         </p>
         <p>
           <AiFillPhone />
@@ -34,14 +34,14 @@ const Footer = () => {
         <h2>Information</h2>
         <p>High Quality is our first priority.</p>
         <p>Contact us for any query 24 hours a day, 7 days a week.</p>
-        <p>Free Shipping on all local orders worth Rs. 5000 & above.</p>
+        <p>Free Shipping | Discounts | Coupons Codes.</p>
       </div>
       {/* ============  */}
       <div className="footer_3">
         <h2>Follow Us</h2>
         <div className="svgs">
           <a
-            href="https://www.instagram.com/clickordern_clothes/"
+            href="https://www.instagram.com/clickordern_store/"
             target="_blank"
             rel="noopener noreferrer"
           >
